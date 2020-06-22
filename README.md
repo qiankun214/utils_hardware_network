@@ -15,3 +15,15 @@
 - conv_place_compute：截取数据和权值的一个xy位置的所有channel数据进行对应位置相乘相加
 - return_randomarray_withmax：产生一个指定尺寸，在-max_data ～ max_data随机分布的ndarray
 - error_analysis_ndarray：分析两个矩阵的误差和相对误差，给出最大值、平均值和中位值
+
+**submodule的使用**
+
+本项目一般用于作为项目的submodule，这里提供submodule的使用方法，添加为submodule的方式如下：
+```shell
+git submodule add <仓库地址>
+```
+
+在submodule中可以进行本module的各种修改和提交工作。如果需要克隆整个项目（主项目包括submodule），添加递归参数如下所示：
+```shell
+git clone <主仓库地址> --recursive
+```
